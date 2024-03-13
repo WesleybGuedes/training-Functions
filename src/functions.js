@@ -1,4 +1,4 @@
-// Requisito 1 - Crie a função verifyPalindrome
+// Requisito 1 - Crie a função verifyPalindromes
 
 // Requisito 2 - Crie a função getHighestIndex
 
