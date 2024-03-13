@@ -40,7 +40,21 @@ getLongestWord = (stringArray) => {
   return longestWord;
 };
 
-// Requisito 5 - Crie a função countHighestNumberMaxOccurrences
+countHighestNumberMaxOccurrences = (arrayInt) => {
+  let highestNumber = arrayInt[0];
+  let count = 0;
+
+  for (let i = 0; i < arrayInt.length; i += 1) {
+    if (arrayInt[i] > highestNumber) {
+      highestNumber = arrayInt[i];
+      count = 1; // Reset count when encountering a new highest number
+    } else if (arrayInt[i] === highestNumber) {
+      count += 1; // Increment count for each occurrence of the highest number
+    }
+  }
+
+  return count;
+};
 
 // Não modifique as linhas abaixo
 module.exports = {
@@ -52,11 +66,3 @@ module.exports = {
     ? countHighestNumberMaxOccurrences
     : (() => { }),
 };
-
-console.log(verifyPalindrome('arara'));
-
-console.log(getHighestIndex([2, 3, 6, 7, 10, 1]));
-
-console.log(getSmallestIndex([2, 4, 6, 7, 10, 0, -3]));
-
-console.log(getLongestWord(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
