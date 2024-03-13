@@ -30,6 +30,15 @@ getSmallestIndex = (arrayInt) => {
 };
 
 // Requisito 4 - Crie a função getLongestWord
+getLongestWord = (stringArray) => {
+  let longestWord = stringArray[0];
+  for (let i = 0; i < stringArray.length; i += 1) {
+    if (stringArray[i].length > longestWord.length) {
+      longestWord = stringArray[i];
+    }
+  }
+  return longestWord;
+};
 
 // Requisito 5 - Crie a função countHighestNumberMaxOccurrences
 
@@ -49,3 +58,5 @@ console.log(verifyPalindrome('arara'));
 console.log(getHighestIndex([2, 3, 6, 7, 10, 1]));
 
 console.log(getSmallestIndex([2, 4, 6, 7, 10, 0, -3]));
+
+console.log(getLongestWord(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
