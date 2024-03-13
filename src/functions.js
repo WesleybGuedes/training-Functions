@@ -10,11 +10,11 @@
 
 // Não modifique as linhas abaixo
 module.exports = {
-  verifyPalindrome: typeof verifyPalindrome === 'function' ? verifyPalindrome : (() => {}),
-  getHighestIndex: typeof getHighestIndex === 'function' ? getHighestIndex : (() => {}),
-  getSmallestIndex: typeof getSmallestIndex === 'function' ? getSmallestIndex : (() => {}),
-  getLongestWord: typeof getLongestWord === 'function' ? getLongestWord : (() => {}),
+  verifyPalindrome: typeof verifyPalindrome === 'function' ? verifyPalindrome : (() => { }),
+  getHighestIndex: typeof getHighestIndex === 'function' ? getHighestIndex : (() => { }),
+  getSmallestIndex: typeof getSmallestIndex === 'function' ? getSmallestIndex : (() => { }),
+  getLongestWord: typeof getLongestWord === 'function' ? getLongestWord : (() => { }),
   countHighestNumberMaxOccurrences: typeof countHighestNumberMaxOccurrences === 'function'
     ? countHighestNumberMaxOccurrences
-    : (() => {}),
+    : (() => { }),
 };
